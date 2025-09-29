@@ -1,8 +1,9 @@
-/* body {
-  background-color: cadetblue;
-} */
+/* общие стили для страницы */
 * {
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'PT Sans', sans-serif;
@@ -110,4 +111,59 @@ blockquote::before {
   position: absolute;
   top: 0;
   left: -17px;
+}
+
+/* стили для бокового меню */
+.sidebar {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+  opacity: 0.3;
+  transition: all ease 0.3s;
+}
+.sidebar:hover {
+  opacity: 1;
+  transition: all ease 0.6s;
+}
+.sidebar ol {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  font-size: 15px;
+}
+.sidebar ol ol {
+  color: rgba(0, 0, 0, 0.4);
+}
+.sidebar li {
+  line-height: 100%;
+}
+.sidebar a {
+  text-decoration: none;
+}
+
+/* стили для верхнего меню */
+.menubar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.menubar img {
+  width: 350px;
+  margin: 0;
+}
+.menubar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  transition: all ease 0.3s;
+}
+.menubar a:hover {
+  color: #000;
+  transition: all ease 0.6s;
 }
