@@ -104,4 +104,43 @@
     font-size: 26px;
     padding: 30px;
   }
+  .index section {
+    margin-top: 110px;
+  }
+  .index .card {
+    width: calc(100% - 20px);
+  }
+  .index .cardImg {
+    height: 26vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .index .card {
+    width: 100%;
+  }
+  .index .cardImg {
+    height: 96vw;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .index section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .index .card {
+    width: 40vw;
+  }
+  .index .card.big {
+    min-height: 34.6vw;
+  }
+  .index .card.small {
+    min-height: 17.03vw;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .index .card {
+    width: 30vw;
+  }
 }
